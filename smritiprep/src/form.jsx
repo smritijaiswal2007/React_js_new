@@ -1,7 +1,10 @@
 import React, { useState } from 'react'
+import {useNavigate} from "react-router-dom";
 
 
 const formVal = () => {
+
+    let Navigate = useNavigate()
     let [form,setform]= useState({
         name:"",
         email:"",
@@ -14,8 +17,11 @@ const formVal = () => {
         })
     }
     let handlesubmit=(e)=>{
-        e.preventDefault();
+        e.preventDefault();//stops the form reloading
         console.log("Data",form);
+
+        let valid = true
+
         if(form.name.trim()===""){
             alert("Name is required");
             return;
@@ -23,9 +29,20 @@ const formVal = () => {
         else if (form.contact.length>10){
             alert("Contact Must be graeter than 10")
         }
+
+        if(valid){
+            alert("form submitted successfully")
+            localStorage.setItem("Name" , form.name)
+            localStorage.setItem("Email" , form.email)
+            localStorage.setItem("Contact" , form.contact)
+
+            Navigate('/login')
+            valid= false
+
+        }
     }
     
-  return (
+    return (
     <>
     <h1>Hello..</h1>
     <form onSubmit={handlesubmit}>
@@ -41,7 +58,7 @@ const formVal = () => {
         <input type="submit" />
     </form>
     </>
-  )
+    )
 }
 
 export default formVal

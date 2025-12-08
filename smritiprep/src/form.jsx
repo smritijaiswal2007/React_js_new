@@ -27,7 +27,7 @@ const formVal = () => {
             return;
         }
         else if (form.contact.length>10){
-            alert("Contact Must be graeter than 10")
+            alert("Contact Must be greater than 10")
         }
 
         if(valid){

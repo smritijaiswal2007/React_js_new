@@ -1,0 +1,32 @@
+{
+    "Train":[
+        {
+        "Name":"Krish Gour",
+        "Adharno" : 1221326521,
+        "Contact" : 3426347348,
+        "Passenger" : 2,
+        "TotalFair" : 2000
+        },
+        {
+        "Name":"Taresh Tandey",
+        "Adharno" : 34634287,
+        "Contact" : 346436346,
+        "Passenger" : 3,
+        "TotalFair" : 1200
+        },
+        {
+        "Name":"Priyesh Mishra",
+        "Adharno" : 37342789342,
+        "Contact" : 874388734,
+        "Passenger" : 5,
+        "TotalFair" : 500
+        },
+        {
+        "Name":"Kanha Gour",
+        "Adharno" : 4363648973,
+        "Contact" : 3673783879,
+        "Passenger" : 2,
+        "TotalFair" : 2  
+        }
+    ]
+}

@@ -44,7 +44,7 @@ const formVal = () => {
     
     return (
     <>
-    <h1>Hello..</h1>
+    <h1>hello..</h1>
     <form onSubmit={handlesubmit}>
         <label htmlFor="username">Username:</label>
         <input type="text"  name="name" onChange={handleclick}  />

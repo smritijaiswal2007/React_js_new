@@ -53,7 +53,7 @@ const formVal = () => {
         <label htmlFor="email">Email:</label>
         <input type="email" name="email" onChange={handleclick} /> <br />
 
-        Contact : <input type="number" name='contact' onChange={handleclick} /> <br />
+        contact : <input type="number" name='contact' onChange={handleclick} /> <br />
 
         <input type="submit" />
     </form>

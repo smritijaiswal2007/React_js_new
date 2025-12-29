@@ -50,7 +50,7 @@ const formVal = () => {
         <input type="text"  name="name" onChange={handleclick}  />
 
         <br /> <br />
-        <label htmlFor="email">Email:</label>
+        <label htmlFor="email">email:</label>
         <input type="email" name="email" onChange={handleclick} /> <br />
 
         contact : <input type="number" name='contact' onChange={handleclick} /> <br />
